@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+
+body {
+  /* background-image: url("https://images.pexels.com/photos/3573556/pexels-photo-3573556.jpeg"); */
+  background-image: url("https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  font-size: 5.4rem;
+  color: #000;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-size: 2.4rem;
+  padding: 25px 30px;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #070707;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #070707, 0 0 25px #070707, 0 0 50px #070707,
+    0 0 200px #070707;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#highscore-btn {
+  color: blueviolet;
+}
+
+#highscore-btn:hover {
+  background: #03e9f4;
+  color: blueviolet;
+  box-shadow: 0 0 5px #070707, 0 0 25px #070707, 0 0 50px #070707,
+    0 0 200px #070707;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.fa-crown {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
