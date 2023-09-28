@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Player-Audio-B-icon.png"
+      type="image/x-icon"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div id="header">
+          <div id="selected_song_id">0/0</div>
+          <i id="musics" class="fa-solid fa-ellipsis"></i>
+        </div>
+        <h2 id="title">Kalimba</h2>
+        <h3 id="artist">Mr. Scruff</h3>
+        <img id="image" src="./Images/Kalimba.jpg" alt="thumbnail" />
+        <audio src="./media/kalimba.mp3"></audio>
+        <article id="progress_container">
+          <div id="progress_duration_meter">
+            <div id="current_time">0:00</div>
+            <div id="duration">5:48</div>
+          </div>
+          <div id="progress_div">
+            <div id="progress"></div>
+          </div>
+        </article>
+        <article>
+          <i
+            class="fa-solid fa-backward-step"
+            id="previous"
+            title="Previous"
+          ></i>
+          <i class="fa-solid fa-play" id="play" title="Play"></i>
+          <i class="fa-solid fa-forward-step" id="next" title="Next"></i>
+        </article>
+        <aside>
+          <input type="range" id="volume" min="0" max="100" value="90" />
+        </aside>
+      </section>
+      <section id="music_list">
+        <i id="close" class="fa-solid fa-xmark"></i>
+        <ul></ul>
+      </section>
+    </main>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

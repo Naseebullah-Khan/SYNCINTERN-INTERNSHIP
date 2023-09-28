@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgba(1, 92, 199);
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("./Images/Background/pexels-kaboompics-com-6320.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#selected_song_id {
+  font-size: 1rem;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header .fa-solid {
+  cursor: pointer;
+  font-size: 1rem;
+  filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(1, 92, 199, 0.4));
+}
+
+#header .fa-solid:hover {
+  color: rgb(1, 92, 199);
+}
+
+section {
+  background-color: whitesmoke;
+  width: 35rem;
+  height: 55rem;
+  border-radius: 2rem;
+  text-align: center;
+  padding: 3rem;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(1, 92, 199, 0.2);
+}
+
+section #title {
+  text-transform: uppercase;
+  margin: 2rem 0 0.5rem 0;
+  font-size: 1.8rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(1, 92, 199, 0.3);
+}
+
+section #artist {
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  color: rgba(1, 92, 199, 0.349);
+}
+
+section #image {
+  width: 25rem;
+  height: 25rem;
+  margin: auto;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(1, 92, 199, 0.4);
+  border-radius: 20%;
+}
+
+#music_list {
+  display: none;
+}
+
+#music_list .fa-solid {
+  cursor: pointer;
+  font-size: 1rem;
+  filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(1, 92, 199, 0.4));
+}
+
+#music_list .fa-solid:hover {
+  color: rgb(1, 92, 199);
+}
+
+article {
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+article .fa-solid {
+  cursor: pointer;
+  font-size: 2rem;
+  filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(1, 92, 199, 0.4));
+}
+
+article #play {
+  font-size: 3rem;
+}
+
+article .fa-solid:hover {
+  color: rgb(1, 92, 199);
+}
+
+#progress_container {
+  margin: 0;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#progress_duration_meter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+#progress_div {
+  width: 100%;
+  height: 0.5rem;
+  box-shadow: 0 1px rgba(1, 92, 199, 0.1), 0 2px 4px rgba(1, 92, 199, 0.1),
+    0 4px 8px rgba(1, 92, 199, 0.1), 0 8px 16px 32px rgba(1, 92, 199, 0.1),
+    0 32px 64px rgba(1, 92, 199, 0.1);
+  border-radius: 4rem;
+  position: relative;
+  margin-top: 0.5rem;
+  transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  cursor: pointer;
+  appearance: none;
+}
+
+#progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(1, 92, 199, 0.4);
+  border-radius: 4rem;
+  cursor: pointer;
+  appearance: none;
+}
+
+#volume {
+  width: 100%;
+  height: 0.2rem;
+  border-radius: 2%;
+  margin-top: 1rem;
+  transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  box-shadow: 0 1px rgba(1, 92, 199, 0.1), 0 2px 4px rgba(1, 92, 199, 0.1),
+    0 4px 8px rgba(1, 92, 199, 0.1), 0 8px 16px 32px rgba(1, 92, 199, 0.1),
+    0 32px 64px rgba(1, 92, 199, 0.1);
+  cursor: pointer;
+}
+
+ul {
+  font-size: 3rem;
+  margin: 1rem 0;
+  max-height: 50rem;
+  overflow: auto;
+}
+
+ul::-webkit-scrollbar {
+  width: 0;
+}
+
+ul li {
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
