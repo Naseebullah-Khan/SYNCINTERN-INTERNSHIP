@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://image.similarpng.com/very-thumbnail/2021/08/3d-Dictionaries-on-Laptop-keyboard.png"
+      type="image/x-icon"
+    />
+    <title>E-Learning Website</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <h1>Knowledge Vault</h1>
+      </a>
+      <nav id="nav">
+        <!-- navbar data goes there -->
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div id="info">
+          <h2>Learn new skills at your own pace.</h2>
+          <p>
+            We offer a variety of online courses on a range of topics, from
+            programming to design to business.
+          </p>
+          <input id="browse_course" type="button" value="Browse courses" />
+          <input id="get_started" type="button" value="Get Started" />
+        </div>
+      </section>
+
+      <section id="future">
+        <h2>Future of E-Learning</h2>
+        <p>
+          The future of eLearning is bright, with new technologies like AI, VR,
+          and AR poised to transform the way we learn and train.<br />
+          Here are some key trends that will shape the future of eLearning:
+        </p>
+        <ul id="future-e-learning">
+          <!-- future e-learning trends goes there -->
+        </ul>
+      </section>
+
+      <section class="reveal" id="tests">
+        <h2 class="reveal">Tests</h2>
+        <ul class="reveal" id="course-tests">
+          <!-- tests goes there -->
+        </ul>
+      </section>
+
+      <section class="reveal" id="featured-courses">
+        <h2 class="reveal">Featured courses</h2>
+        <ul class="reveal" id="featured-courses-list">
+          <!-- featured courses goes there -->
+        </ul>
+      </section>
+
+      <section class="reveal" id="courses">
+        <h2 class="reveal">Our courses</h2>
+        <ul class="reveal" id="courses-list">
+          <!-- regular courses goes there -->
+        </ul>
+      </section>
+
+      <section class="reveal" id="about">
+        <img
+          class="reveal"
+          src="https://img.freepik.com/free-photo/learning-education-ideas-insight-intelligence-study-concept_53876-120116.jpg?w=740&t=st=1696164943~exp=1696165543~hmac=c6ae397480bc0ad45b20e185fb599dd3534f1008358a2676bf012223fd769a3a"
+          alt=""
+        />
+        <div class="reveal">
+          <h2 class="reveal">About us</h2>
+          <p class="reveal">
+            Knowledge Vault is an eLearning website that provides high-quality
+            online courses and programs. We are passionate about helping
+            students of all ages and backgrounds learn new skills and advance
+            their careers.
+          </p>
+          <p class="reveal">
+            Our courses are taught by experienced and qualified instructors who
+            use a variety of teaching methods to ensure that our students learn
+            the skills they need to succeed. We also offer a variety of support
+            services to help our students succeed.
+          </p>
+          <p class="reveal">
+            We are committed to providing our students with the best possible
+            eLearning experience. We are constantly innovating and updating our
+            courses to ensure that they are relevant and engaging.
+          </p>
+          <p class="reveal">
+            If you are looking for a high-quality eLearning experience, we
+            encourage you to explore our courses and programs. We are confident
+            that we can help you achieve your learning goals.
+          </p>
+          <p class="reveal">
+            This version of the About Us section is shorter and simpler, but it
+            still conveys the most important information about your company and
+            its mission. It also uses a more personal tone to connect with your
+            audience.
+          </p>
+        </div>
+      </section>
+
+      <section class="reveal" id="contact">
+        <div class="reveal" id="photo">
+          <img
+            class="reveal"
+            src="https://img.freepik.com/free-photo/office-desktop-with-laptop-business-man_23-2148174087.jpg?w=740&t=st=1696165058~exp=1696165658~hmac=ca2fab296638b0b9c15b754ff9eafc6718a654cee5c59df06667acf21070352c"
+            alt=""
+          />
+        </div>
+        <div class="reveal" id="info">
+          <h2 class="reveal">Contact us</h2>
+          <form action="/contact" method="post">
+            <div class="form-control">
+              <input type="text" name="name" placeholder="Your name" />
+            </div>
+            <div class="form-control">
+              <input type="email" name="email" placeholder="Your email" />
+            </div>
+            <div class="form-control">
+              <textarea name="message" placeholder="Your message"></textarea>
+            </div>
+            <div class="form-control">
+              <input type="submit" value="Send" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="sublinks">
+        <div id="contact-info">
+          <div id="location">Kabul, Afghanistan</div>
+          <div id="email">***********@hotmail.com</div>
+          <div id="phone-number">+93 *** *** ****</div>
+        </div>
+        <div id="menu">
+          <!-- footer menu goes there -->
+        </div>
+      </div>
+      <p>Copyright &copy; 2023 E-Learning Website</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+    <script>
+      const login = document.querySelector("#get_started");
+      login.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.location.assign("/login.html");
+      });
+    </script>
+  </body>
+</html>

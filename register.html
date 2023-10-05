@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <link
+      rel="shortcut icon"
+      href="https://www.projectcounter.org/wp-content/uploads/2016/03/icon-register.png"
+      type="image/x-icon"
+    />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <div class="control-form">
+        <label for="text">Name</label>
+        <input
+          type="text"
+          name="text"
+          id="text"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="control-form">
+        <label for="email">E-Mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="control-form">
+        <label for="tel">Tel</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="Enter your phone number"
+          required
+        />
+      </div>
+      <div class="control-form">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+      <div class="control-form">
+        <label for="teacher">Teacher</label>
+        <input type="radio" name="role" id="teacher" value="teacher" />
+        <label for="student">Student</label>
+        <input type="radio" name="role" id="student" value="student" />
+      </div>
+      <div class="file-input">
+        <input type="file" id="file" class="file" />
+        <label for="file">Education</label>
+        <p class="file-name"></p>
+      </div>
+      <input type="submit" value="Sign up" />
+      <a href="./login.html">Already have an account</a>
+    </form>
+  </body>
+  <script>
+    const file = document.querySelector("#file");
+    file.addEventListener("change", (e) => {
+      const [file] = e.target.files;
+      const { name: fileName, size } = file;
+      const fileSize = (size / 1000).toFixed(2);
+      const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+      document.querySelector(".file-name").textContent = fileNameAndSize;
+    });
+  </script>
+</html>

@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nova+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(240, 240, 240);
+}
+
+header {
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgb(206, 224, 238);
+}
+
+#user_info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+}
+
+#user_info img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 2rem;
+}
+
+#profile_info h4 {
+  margin-top: 15%;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+nav a {
+  margin-top: 10%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  width: 80vw;
+}
+
+#dashboard {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4rem;
+  margin-top: 2.5%;
+}
+
+.numbers {
+  width: 75vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  flex-direction: row;
+  margin-top: 1%;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(206, 224, 238);
+  border-radius: 50%;
+  font-size: 2rem;
+  width: 5vw;
+  font-weight: bolder;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 8vw;
+}
+
+#announcements {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 10rem;
+  margin-top: 2.5%;
+}
+
+#announcements h2 {
+  font-size: 3rem;
+  margin-bottom: 1%;
+}
+
+#featured {
+  display: grid;
+  grid-template-columns: auto auto;
+  place-content: center;
+  row-gap: 1%;
+  column-gap: 1%;
+  font-size: 10rem;
+  text-align: center;
+}
+
+#assignments,
+#courses,
+#teachers,
+#tests,
+#students {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10rem;
+  margin-top: 2.5%;
+}
+
+#assignments h2,
+#courses h2,
+#courses h3,
+#teachers h2,
+#tests h2,
+#students h2 {
+  font-size: 3rem;
+  margin-bottom: 1%;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 75vw;
+  font-size: 2rem;
+  margin-top: 1%;
+}
+
+.button input {
+  width: 20%;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(206, 224, 238);
+}
+
+.button input:hover {
+  background-color: peru;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+thead tr th {
+  background-color: #ccc;
+  padding: 5px;
+}
+
+tbody tr td {
+  padding: 5px;
+}
+
+footer {
+  margin-top: 1%;
+  width: 68vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-radius: 2rem;
+  background-color: rgb(206, 224, 238);
+  padding: 1rem 3rem;
+}
+
+@media screen and (max-width: 916px) {
+  #featured {
+    margin-top: 5%;
+    grid-template-columns: auto;
+  }
+  #user_info img {
+    display: none;
+  }
+  .button input {
+    font-size: 0.8rem;
+  }
+  #courses h2 {
+    margin-top: 6%;
+  }
+}
+
+.reveal {
+  /* position: relative; */
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}

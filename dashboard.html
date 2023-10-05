@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsB3DrDDUMkvjHAIAWU3b6hY6mFm8yqtGMHanj-_ARZO2BrsCuVc6I7nsziolvEWnSUZ4&usqp=CAU"
+      type="image/x-icon"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <div style="position: fixed">
+        <div id="user_info">
+          <img
+            src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=740&t=st=1696353125~exp=1696353725~hmac=f8982dea20061649c2671102f7d0101d121b26360650b817583d87abcc3bfae7"
+            alt="Profile Picture"
+          />
+          <div id="profile_info">
+            <h4>Name</h4>
+            <h4>Admin</h4>
+          </div>
+        </div>
+        <nav id="menu">
+          <!-- menu goes there -->
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1>Dashboard</h1>
+      <section id="dashboard">
+        <h2>Overview</h2>
+        <div class="numbers">
+          <div class="name">Total Courses</div>
+          <div class="name">Total Tests</div>
+          <div class="name">Total Teachers</div>
+          <div class="name">Total Students</div>
+        </div>
+        <div class="numbers">
+          <div class="number">224</div>
+          <div class="number">334</div>
+          <div class="number">554</div>
+          <div class="number">674</div>
+        </div>
+        <div id="announcements">
+          <h2>Announcements</h2>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Announcement</th>
+              </tr>
+            </thead>
+            <tbody id="announcement">
+              <!-- announcement goes there -->
+            </tbody>
+          </table>
+        </div>
+        <h2 style="margin-bottom: 2%; margin-top: 2.5%">
+          Featured Courses, Students, Tests and Teachers
+        </h2>
+        <div id="featured">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Student Name</th>
+                <th scope="col">Year</th>
+                <th scope="col">Major</th>
+                <th scope="col">Achievements</th>
+              </tr>
+            </thead>
+            <tbody id="featured_student">
+              <!-- featured students goes there -->
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Teacher Name</th>
+                <th scope="col">Years of Experience</th>
+                <th scope="col">Education</th>
+                <th scope="col">Awards and Recognition</th>
+              </tr>
+            </thead>
+            <tbody id="featured_teacher">
+              <!-- featured teachers goes there -->
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Course Code</th>
+                <th scope="col">Course Name</th>
+                <th scope="col">Instructor</th>
+              </tr>
+            </thead>
+            <tbody id="featured_course">
+              <!-- featured courses goes there -->
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th>Test</th>
+                <th>Description</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody id="featured_test">
+              <!-- featured tests goes there -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="reveal" id="courses">
+        <h2>Courses</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Course Code</th>
+              <th scope="col">Course Name</th>
+              <th scope="col">Credit Hours</th>
+            </tr>
+          </thead>
+          <tbody class="reveal" id="course">
+            <!-- courses goes there -->
+          </tbody>
+        </table>
+
+        <h3 style="margin-top: 2.5%; margin-bottom: 1%">Upcoming Courses</h3>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Course Code</th>
+              <th scope="col">Course Name</th>
+              <th scope="col">Start Date</th>
+              <th scope="col">End Date</th>
+              <th scope="col">Instructor</th>
+            </tr>
+          </thead>
+          <tbody class="reveal" id="upcomingCourse">
+            <!-- upcoming courses goes there -->
+          </tbody>
+        </table>
+        <div class="button reveal">
+          <input id="add_course" type="button" value="Add Course" />
+          <input id="remove_course" type="button" value="Remove Course" />
+          <input id="edit_course" type="button" value="Edit Course" />
+        </div>
+      </section>
+
+      <section class="reveal" id="teachers">
+        <h2>List of Teachers</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Institution</th>
+              <th scope="col">Area of Expertise</th>
+            </tr>
+          </thead>
+          <tbody class="reveal" id="teacher">
+            <!-- teachers goes there -->
+          </tbody>
+        </table>
+        <div class="button reveal">
+          <input id="add_teacher" type="button" value="Add Teacher" />
+          <input id="remove_teacher" type="button" value="Remove Teacher" />
+          <input id="edit_teacher" type="button" value="Edit Teacher" />
+        </div>
+      </section>
+
+      <section class="reveal" id="students">
+        <h2>List of Students</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Institution</th>
+              <th scope="col">Year</th>
+              <th scope="col">Research Interests</th>
+            </tr>
+          </thead>
+          <tbody class="reveal" id="student">
+            <!-- students goes there -->
+          </tbody>
+        </table>
+        <div class="button reveal">
+          <input id="add_student" type="button" value="Add Student" />
+          <input id="remove_student" type="button" value="Remove Student" />
+          <input id="edit_student" type="button" value="Edit Student" />
+        </div>
+      </section>
+
+      <section class="reveal" id="tests">
+        <h2>Tests</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Test Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Difficulty</th>
+              <th scope="col">Topics Covered</th>
+            </tr>
+          </thead>
+          <tbody class="reveal" id="test">
+            <!-- tests goes there -->
+          </tbody>
+        </table>
+        <div class="button reveal">
+          <input id="add_test" type="button" value="Add Test" />
+          <input id="remove_test" type="button" value="Remove Test" />
+          <input id="edit_test" type="button" value="Edit Test" />
+        </div>
+      </section>
+
+      <section class="reveal" id="assignments">
+        <h2>Upcoming Assignments</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Course</th>
+              <th scope="col">Assignment</th>
+              <th scope="col">Due date</th>
+            </tr>
+          </thead>
+          <tbody class="reveal" id="upcomingAssignment">
+            <!-- upcoming assignments goes there -->
+          </tbody>
+        </table>
+        <table>
+          <h2 style="margin-top: 2.5%; margin-bottom: 1%">
+            Recently Completed Assignments
+          </h2>
+          <thead>
+            <tr>
+              <th scope="col">Course</th>
+              <th scope="col">Assignment</th>
+              <th scope="col">Due date</th>
+              <th scope="col">Grade</th>
+            </tr>
+          </thead>
+          <tbody class="reveal" id="recentlyCompletedAssignment">
+            <!-- recently completed assignments goes there-->
+          </tbody>
+        </table>
+      </section>
+
+      <footer>
+        <div id="contact-info">
+          <div id="location">Kabul, Afghanistan</div>
+          <div id="email">***********@hotmail.com</div>
+          <div id="phone-number">+93 *** *** ****</div>
+        </div>
+        <div id="copyright">
+          <p>Copyright &copy; 2023 E-Learning Website</p>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="./dashboardScript.js"></script>
+  </body>
+</html>
